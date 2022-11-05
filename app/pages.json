@@ -1,0 +1,80 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/circle/circle",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/projects/projects",
+			"style": {
+				"navigationBarBackgroundColor": "#445760",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "项目",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "添加新项目 ",
+							"fontSize": "16"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/cirFabu/cirFabu",
+			"style": {
+				"navigationBarTitleText": "发布新的说说",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "发布  ",
+							"fontSize": "16"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/createProject/createProject",
+			"style": {
+				"navigationBarTitleText": "新增项目",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "发布  ",
+							"fontSize": "16"
+						}]
+					}
+				}
+			}
+		}
+	],
+	"tabBar": {
+		"list": [{
+				"iconPath": "./static/tabbar/circle.png",
+				"selectedIconPath": "./static/tabbar/circle_select.png",
+				"text": "说说",
+				"pagePath": "pages/circle/circle"
+			},
+			{
+				"iconPath": "./static/tabbar/project.png",
+				"text": "项目",
+				"pagePath": "pages/projects/projects",
+				"selectedIconPath": "./static/tabbar/project_new.png"
+			}
+		]
+	},
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
