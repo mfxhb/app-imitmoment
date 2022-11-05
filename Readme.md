@@ -4,7 +4,7 @@
 # 拉取代码
 
 ```
-git clone -b master git@gitee.com:isAllyn/app-for-mobile-recording.git BlogApp
+git clone git@github.com:mfxhb/app-imitmoment.git
 ```
 
 # 启动
